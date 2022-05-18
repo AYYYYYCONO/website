@@ -1,4 +1,40 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'Woah'
+title = "Title"
+baseURL = "jaydenm.tech"
+languageCode = "en-us"
 theme = "ananke"
+resourceDir = "../resources"
+
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = "1"
+enableRobotsTXT = "False"
+
+[languages]
+  [languages.en]
+    title = "Hot-Wheels"
+    contentDir = "content/en"
+    # languageDirection = 'rtl' for Right-To-Left languages
+  [languages.fr]
+    title = "New"
+    weight = 10
+    contentDir = "Lower"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  text_color = "black"
+  author = "jayden"
+  favicon = ""
+  site_logo = "https://1000logos.net/wp-content/uploads/2020/09/Hot-Wheels-logo.png"
+  description = "The last theme you'll ever need. Maybe."
+  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
+  background_color_class = "bg-black"
+  recent_posts_number = 3
+
+[[params.ananke_socials]]
+name = "Click This Link(Plz)"
+url = "https://shop.mattel.com/pages/hot-wheels"
